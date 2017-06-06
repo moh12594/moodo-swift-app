@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68C3DB947D6BDE0A7746A5F5 /* Pods_Moodo1_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280ED39C2A24A9282D69D51F /* Pods_Moodo1_0.framework */; };
+		A014DD4B1EDECD8000B806F0 /* ButtonRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014DD4A1EDECD8000B806F0 /* ButtonRounded.swift */; };
+		A0190F961EE0398D00B827F7 /* moodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190F951EE0398D00B827F7 /* moodCell.swift */; };
+		A0190F971EE0B16A00B827F7 /* moodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190F931EE0352B00B827F7 /* moodTableViewController.swift */; };
+		A0190F991EE2D68500B827F7 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190F981EE2D68500B827F7 /* AddTaskViewController.swift */; };
+		A0190F9B1EE32B3F00B827F7 /* taskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190F9A1EE32B3F00B827F7 /* taskCell.swift */; };
+		A02164511ECEFC8A0068BA3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02164501ECEFC8A0068BA3B /* AppDelegate.swift */; };
+		A02164531ECEFC8A0068BA3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02164521ECEFC8A0068BA3B /* ViewController.swift */; };
+		A02164581ECEFC8A0068BA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02164571ECEFC8A0068BA3B /* Assets.xcassets */; };
+		A021645B1ECEFC8A0068BA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02164591ECEFC8A0068BA3B /* LaunchScreen.storyboard */; };
+		A021646B1ECF368F0068BA3B /* Cabin-Bold-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A02164631ECF368F0068BA3B /* Cabin-Bold-TTF.ttf */; };
+		A021646C1ECF368F0068BA3B /* Cabin-BoldItalic-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A02164641ECF368F0068BA3B /* Cabin-BoldItalic-TTF.ttf */; };
+		A021646D1ECF368F0068BA3B /* Cabin-Italic-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A02164651ECF368F0068BA3B /* Cabin-Italic-TTF.ttf */; };
+		A021646E1ECF368F0068BA3B /* Cabin-Medium-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A02164661ECF368F0068BA3B /* Cabin-Medium-TTF.ttf */; };
+		A021646F1ECF368F0068BA3B /* Cabin-MediumItalic-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A02164671ECF368F0068BA3B /* Cabin-MediumItalic-TTF.ttf */; };
+		A02164701ECF368F0068BA3B /* Cabin-Regular-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A02164681ECF368F0068BA3B /* Cabin-Regular-TTF.ttf */; };
+		A02164711ECF368F0068BA3B /* Cabin-SemiBold-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A02164691ECF368F0068BA3B /* Cabin-SemiBold-TTF.ttf */; };
+		A02164721ECF368F0068BA3B /* Cabin-SemiBoldItalic-TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A021646A1ECF368F0068BA3B /* Cabin-SemiBoldItalic-TTF.ttf */; };
+		A04E7B901EE468EF00B37828 /* profilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04E7B8F1EE468EF00B37828 /* profilViewController.swift */; };
+		A0745D781EDAFCF0005C37D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0745D771EDAFCF0005C37D2 /* HomeViewController.swift */; };
+		A0903D4F1EE5E145008893BF /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0903D4E1EE5E145008893BF /* EditTaskViewController.swift */; };
+		A09C73FA1EE6B8D900801EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09C73F81EE6B8D900801EFD /* Main.storyboard */; };
+		A09C73FC1EE747F900801EFD /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09C73FB1EE747F900801EFD /* StatsViewController.swift */; };
+		A0AD23D21ED1D02400D2DD8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0AD23D11ED1D02400D2DD8A /* GoogleService-Info.plist */; };
+		A0AD344B1ED1D6A200143C22 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AD344A1ED1D6A200143C22 /* AdSupport.framework */; };
+		A0AD344D1ED1E3EA00143C22 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AD344C1ED1E3EA00143C22 /* LoginViewController.swift */; };
+		A0AD344F1ED2D7FE00143C22 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AD344E1ED2D7FE00143C22 /* Utilities.swift */; };
+		A0AD34511ED2DBEA00143C22 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AD34501ED2DBEA00143C22 /* RegisterViewController.swift */; };
+		A0D5B5211EDD8ED1004F5E93 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D5B5201EDD8ED1004F5E93 /* Mood.swift */; };
+		A0E6C17C1EE45F37007B8C76 /* TaskAddedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E6C17B1EE45F37007B8C76 /* TaskAddedViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		280ED39C2A24A9282D69D51F /* Pods_Moodo1_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moodo1_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C266D9697191A96CA1E0F9 /* Pods-Moodo1.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodo1.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moodo1.0/Pods-Moodo1.0.release.xcconfig"; sourceTree = "<group>"; };
+		A014DD4A1EDECD8000B806F0 /* ButtonRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonRounded.swift; sourceTree = "<group>"; };
+		A0190F931EE0352B00B827F7 /* moodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = moodTableViewController.swift; path = ../moodTableViewController.swift; sourceTree = "<group>"; };
+		A0190F951EE0398D00B827F7 /* moodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moodCell.swift; sourceTree = "<group>"; };
+		A0190F981EE2D68500B827F7 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		A0190F9A1EE32B3F00B827F7 /* taskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taskCell.swift; sourceTree = "<group>"; };
+		A021644D1ECEFC8A0068BA3B /* Moodo1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moodo1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02164501ECEFC8A0068BA3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A02164521ECEFC8A0068BA3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A02164571ECEFC8A0068BA3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A021645A1ECEFC8A0068BA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A021645C1ECEFC8A0068BA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02164631ECF368F0068BA3B /* Cabin-Bold-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold-TTF.ttf"; sourceTree = "<group>"; };
+		A02164641ECF368F0068BA3B /* Cabin-BoldItalic-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-BoldItalic-TTF.ttf"; sourceTree = "<group>"; };
+		A02164651ECF368F0068BA3B /* Cabin-Italic-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Italic-TTF.ttf"; sourceTree = "<group>"; };
+		A02164661ECF368F0068BA3B /* Cabin-Medium-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium-TTF.ttf"; sourceTree = "<group>"; };
+		A02164671ECF368F0068BA3B /* Cabin-MediumItalic-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-MediumItalic-TTF.ttf"; sourceTree = "<group>"; };
+		A02164681ECF368F0068BA3B /* Cabin-Regular-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular-TTF.ttf"; sourceTree = "<group>"; };
+		A02164691ECF368F0068BA3B /* Cabin-SemiBold-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold-TTF.ttf"; sourceTree = "<group>"; };
+		A021646A1ECF368F0068BA3B /* Cabin-SemiBoldItalic-TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBoldItalic-TTF.ttf"; sourceTree = "<group>"; };
+		A04E7B8F1EE468EF00B37828 /* profilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profilViewController.swift; sourceTree = "<group>"; };
+		A0745D771EDAFCF0005C37D2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A0903D4E1EE5E145008893BF /* EditTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		A09C73F91EE6B8D900801EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A09C73FB1EE747F900801EFD /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		A0AD23D11ED1D02400D2DD8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A0AD344A1ED1D6A200143C22 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A0AD344C1ED1E3EA00143C22 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A0AD344E1ED2D7FE00143C22 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A0AD34501ED2DBEA00143C22 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A0D5B5201EDD8ED1004F5E93 /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		A0E6C17B1EE45F37007B8C76 /* TaskAddedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskAddedViewController.swift; sourceTree = "<group>"; };
+		F4A304798318AF7E8BFDAA60 /* Pods-Moodo1.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodo1.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moodo1.0/Pods-Moodo1.0.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A021644A1ECEFC890068BA3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AD344B1ED1D6A200143C22 /* AdSupport.framework in Frameworks */,
+				68C3DB947D6BDE0A7746A5F5 /* Pods_Moodo1_0.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28095F60905AE92C12D99DFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4A304798318AF7E8BFDAA60 /* Pods-Moodo1.0.debug.xcconfig */,
+				72C266D9697191A96CA1E0F9 /* Pods-Moodo1.0.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A02164441ECEFC890068BA3B = {
+			isa = PBXGroup;
+			children = (
+				A021644F1ECEFC8A0068BA3B /* Moodo1.0 */,
+				A021644E1ECEFC8A0068BA3B /* Products */,
+				28095F60905AE92C12D99DFD /* Pods */,
+				D1A680030162945A983D547F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A021644E1ECEFC8A0068BA3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A021644D1ECEFC8A0068BA3B /* Moodo1.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A021644F1ECEFC8A0068BA3B /* Moodo1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				A02164621ECF36740068BA3B /* fonts */,
+				A02164501ECEFC8A0068BA3B /* AppDelegate.swift */,
+				A0AD23D11ED1D02400D2DD8A /* GoogleService-Info.plist */,
+				A02164521ECEFC8A0068BA3B /* ViewController.swift */,
+				A02164571ECEFC8A0068BA3B /* Assets.xcassets */,
+				A02164591ECEFC8A0068BA3B /* LaunchScreen.storyboard */,
+				A021645C1ECEFC8A0068BA3B /* Info.plist */,
+				A0AD344C1ED1E3EA00143C22 /* LoginViewController.swift */,
+				A0AD34501ED2DBEA00143C22 /* RegisterViewController.swift */,
+				A0190F931EE0352B00B827F7 /* moodTableViewController.swift */,
+				A09C73F81EE6B8D900801EFD /* Main.storyboard */,
+				A0AD344E1ED2D7FE00143C22 /* Utilities.swift */,
+				A0745D771EDAFCF0005C37D2 /* HomeViewController.swift */,
+				A0D5B5201EDD8ED1004F5E93 /* Mood.swift */,
+				A014DD4A1EDECD8000B806F0 /* ButtonRounded.swift */,
+				A0190F951EE0398D00B827F7 /* moodCell.swift */,
+				A0190F981EE2D68500B827F7 /* AddTaskViewController.swift */,
+				A0190F9A1EE32B3F00B827F7 /* taskCell.swift */,
+				A0E6C17B1EE45F37007B8C76 /* TaskAddedViewController.swift */,
+				A04E7B8F1EE468EF00B37828 /* profilViewController.swift */,
+				A0903D4E1EE5E145008893BF /* EditTaskViewController.swift */,
+				A09C73FB1EE747F900801EFD /* StatsViewController.swift */,
+			);
+			path = Moodo1.0;
+			sourceTree = "<group>";
+		};
+		A02164621ECF36740068BA3B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A02164631ECF368F0068BA3B /* Cabin-Bold-TTF.ttf */,
+				A02164641ECF368F0068BA3B /* Cabin-BoldItalic-TTF.ttf */,
+				A02164651ECF368F0068BA3B /* Cabin-Italic-TTF.ttf */,
+				A02164661ECF368F0068BA3B /* Cabin-Medium-TTF.ttf */,
+				A02164671ECF368F0068BA3B /* Cabin-MediumItalic-TTF.ttf */,
+				A02164681ECF368F0068BA3B /* Cabin-Regular-TTF.ttf */,
+				A02164691ECF368F0068BA3B /* Cabin-SemiBold-TTF.ttf */,
+				A021646A1ECF368F0068BA3B /* Cabin-SemiBoldItalic-TTF.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		D1A680030162945A983D547F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0AD344A1ED1D6A200143C22 /* AdSupport.framework */,
+				280ED39C2A24A9282D69D51F /* Pods_Moodo1_0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A021644C1ECEFC890068BA3B /* Moodo1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A021645F1ECEFC8A0068BA3B /* Build configuration list for PBXNativeTarget "Moodo1.0" */;
+			buildPhases = (
+				08A187D3B262815D2742950E /* [CP] Check Pods Manifest.lock */,
+				A02164491ECEFC890068BA3B /* Sources */,
+				A021644A1ECEFC890068BA3B /* Frameworks */,
+				A021644B1ECEFC890068BA3B /* Resources */,
+				9A6A5B8EB797D5CB03E7054C /* [CP] Embed Pods Frameworks */,
+				B433D486190A13D79CF63D2A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moodo1.0;
+			productName = Moodo1.0;
+			productReference = A021644D1ECEFC8A0068BA3B /* Moodo1.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A02164451ECEFC890068BA3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Mohsadat;
+				TargetAttributes = {
+					A021644C1ECEFC890068BA3B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JBD2W62Q7B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A02164481ECEFC890068BA3B /* Build configuration list for PBXProject "Moodo1.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A02164441ECEFC890068BA3B;
+			productRefGroup = A021644E1ECEFC8A0068BA3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A021644C1ECEFC890068BA3B /* Moodo1.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A021644B1ECEFC890068BA3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02164721ECF368F0068BA3B /* Cabin-SemiBoldItalic-TTF.ttf in Resources */,
+				A021646E1ECF368F0068BA3B /* Cabin-Medium-TTF.ttf in Resources */,
+				A021646B1ECF368F0068BA3B /* Cabin-Bold-TTF.ttf in Resources */,
+				A09C73FA1EE6B8D900801EFD /* Main.storyboard in Resources */,
+				A02164701ECF368F0068BA3B /* Cabin-Regular-TTF.ttf in Resources */,
+				A021646F1ECF368F0068BA3B /* Cabin-MediumItalic-TTF.ttf in Resources */,
+				A0AD23D21ED1D02400D2DD8A /* GoogleService-Info.plist in Resources */,
+				A02164711ECF368F0068BA3B /* Cabin-SemiBold-TTF.ttf in Resources */,
+				A021646D1ECF368F0068BA3B /* Cabin-Italic-TTF.ttf in Resources */,
+				A021645B1ECEFC8A0068BA3B /* LaunchScreen.storyboard in Resources */,
+				A021646C1ECF368F0068BA3B /* Cabin-BoldItalic-TTF.ttf in Resources */,
+				A02164581ECEFC8A0068BA3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08A187D3B262815D2742950E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A6A5B8EB797D5CB03E7054C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moodo1.0/Pods-Moodo1.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B433D486190A13D79CF63D2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moodo1.0/Pods-Moodo1.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A02164491ECEFC890068BA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0190F9B1EE32B3F00B827F7 /* taskCell.swift in Sources */,
+				A0AD344D1ED1E3EA00143C22 /* LoginViewController.swift in Sources */,
+				A09C73FC1EE747F900801EFD /* StatsViewController.swift in Sources */,
+				A014DD4B1EDECD8000B806F0 /* ButtonRounded.swift in Sources */,
+				A0190F961EE0398D00B827F7 /* moodCell.swift in Sources */,
+				A0AD34511ED2DBEA00143C22 /* RegisterViewController.swift in Sources */,
+				A02164531ECEFC8A0068BA3B /* ViewController.swift in Sources */,
+				A0D5B5211EDD8ED1004F5E93 /* Mood.swift in Sources */,
+				A0903D4F1EE5E145008893BF /* EditTaskViewController.swift in Sources */,
+				A0190F991EE2D68500B827F7 /* AddTaskViewController.swift in Sources */,
+				A04E7B901EE468EF00B37828 /* profilViewController.swift in Sources */,
+				A0190F971EE0B16A00B827F7 /* moodTableViewController.swift in Sources */,
+				A0AD344F1ED2D7FE00143C22 /* Utilities.swift in Sources */,
+				A0E6C17C1EE45F37007B8C76 /* TaskAddedViewController.swift in Sources */,
+				A0745D781EDAFCF0005C37D2 /* HomeViewController.swift in Sources */,
+				A02164511ECEFC8A0068BA3B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A02164591ECEFC8A0068BA3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A021645A1ECEFC8A0068BA3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A09C73F81EE6B8D900801EFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A09C73F91EE6B8D900801EFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A021645D1ECEFC8A0068BA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A021645E1ECEFC8A0068BA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A02164601ECEFC8A0068BA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A304798318AF7E8BFDAA60 /* Pods-Moodo1.0.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JBD2W62Q7B;
+				INFOPLIST_FILE = Moodo1.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohsadat.Moodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A02164611ECEFC8A0068BA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C266D9697191A96CA1E0F9 /* Pods-Moodo1.0.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JBD2W62Q7B;
+				INFOPLIST_FILE = Moodo1.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohsadat.Moodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A02164481ECEFC890068BA3B /* Build configuration list for PBXProject "Moodo1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A021645D1ECEFC8A0068BA3B /* Debug */,
+				A021645E1ECEFC8A0068BA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A021645F1ECEFC8A0068BA3B /* Build configuration list for PBXNativeTarget "Moodo1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02164601ECEFC8A0068BA3B /* Debug */,
+				A02164611ECEFC8A0068BA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A02164451ECEFC890068BA3B /* Project object */;
+}
