@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if (Auth.auth().currentUser) != nil {
             mc.present(mc, animated: true, completion: nil)
-            print("signed in")
+            // print("signed in")
         } else {
             // Passing the shortcutItem to the loginVC's variable
             root?.present(lc, animated: true, completion: nil)

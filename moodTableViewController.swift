@@ -37,7 +37,7 @@ class moodTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Hello")
+        // print("Hello")
         
         // Do any additional setup after loading the view.
         
@@ -74,7 +74,7 @@ class moodTableViewController: UIViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         let ip = tableView.indexPathForSelectedRow
-        // print(moodTextSources[(ip?.row)!])
+        // // print(moodTextSources[(ip?.row)!])
         
         
         if(ip != nil) {
@@ -88,14 +88,14 @@ class moodTableViewController: UIViewController {
         
         
         
-            // print("\(date) and \(moodTest)")
+            // // print("\(date) and \(moodTest)")
             let mood = Mood()
             mood.moodName = moodTest
             mood.date = date
         
         
         
-            // print("\(mood.moodName!)")
+            // // print("\(mood.moodName!)")
             let user = Auth.auth().currentUser
         
             //let key = ref.child("moods").childByAutoId().key

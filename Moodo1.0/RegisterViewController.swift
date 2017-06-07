@@ -33,11 +33,11 @@ class RegisterViewController: UIViewController {
         let name = nameTextField.text
         
         
-        
+        if (!(name?.isEmpty)!) {
         Auth.auth().createUser(withEmail: email!, password: password!) { (user, error) in
             if let error = error {
                 Utilities().showAlert(title: "Erreur !", message: error.localizedDescription, vc: self)
-                print(error.localizedDescription)
+                // print(error.localizedDescription)
                 return
             }
             
@@ -53,6 +53,10 @@ class RegisterViewController: UIViewController {
                 
             }
         }
+        } else {
+            Utilities().showAlert(title: "Erreur !", message: "Veuillez insérer votre nom !", vc: self)
+        }
+        
         
     }
     override func viewDidLoad() {

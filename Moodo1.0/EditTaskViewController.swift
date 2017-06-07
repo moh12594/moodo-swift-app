@@ -60,8 +60,7 @@ class EditTaskViewController: UIViewController {
         
         let user = Auth.auth().currentUser
         
-        print("I'm in")
-        print(taskEditing)
+
         
         ref = Database.database().reference()
         let taskToEditRef = ref.child("Todo").child((user?.uid)!).child(taskEditing).child("task")

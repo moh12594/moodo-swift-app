@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate {
             try auth.signOut()
             
         } catch let signOutError as NSError {
-            print("Error siging out")
+            // print("Error siging out")
         }**/
         
         if(auth.currentUser == nil) {

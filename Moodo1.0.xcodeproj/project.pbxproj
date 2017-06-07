@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		68C3DB947D6BDE0A7746A5F5 /* Pods_Moodo1_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280ED39C2A24A9282D69D51F /* Pods_Moodo1_0.framework */; };
-		A014DD4B1EDECD8000B806F0 /* ButtonRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014DD4A1EDECD8000B806F0 /* ButtonRounded.swift */; };
 		A0190F961EE0398D00B827F7 /* moodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190F951EE0398D00B827F7 /* moodCell.swift */; };
 		A0190F971EE0B16A00B827F7 /* moodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190F931EE0352B00B827F7 /* moodTableViewController.swift */; };
 		A0190F991EE2D68500B827F7 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190F981EE2D68500B827F7 /* AddTaskViewController.swift */; };
@@ -42,7 +41,6 @@
 /* Begin PBXFileReference section */
 		280ED39C2A24A9282D69D51F /* Pods_Moodo1_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moodo1_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C266D9697191A96CA1E0F9 /* Pods-Moodo1.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodo1.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moodo1.0/Pods-Moodo1.0.release.xcconfig"; sourceTree = "<group>"; };
-		A014DD4A1EDECD8000B806F0 /* ButtonRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonRounded.swift; sourceTree = "<group>"; };
 		A0190F931EE0352B00B827F7 /* moodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = moodTableViewController.swift; path = ../moodTableViewController.swift; sourceTree = "<group>"; };
 		A0190F951EE0398D00B827F7 /* moodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moodCell.swift; sourceTree = "<group>"; };
 		A0190F981EE2D68500B827F7 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 				A0AD344E1ED2D7FE00143C22 /* Utilities.swift */,
 				A0745D771EDAFCF0005C37D2 /* HomeViewController.swift */,
 				A0D5B5201EDD8ED1004F5E93 /* Mood.swift */,
-				A014DD4A1EDECD8000B806F0 /* ButtonRounded.swift */,
 				A0190F951EE0398D00B827F7 /* moodCell.swift */,
 				A0190F981EE2D68500B827F7 /* AddTaskViewController.swift */,
 				A0190F9A1EE32B3F00B827F7 /* taskCell.swift */,
@@ -305,7 +302,6 @@
 				A0190F9B1EE32B3F00B827F7 /* taskCell.swift in Sources */,
 				A0AD344D1ED1E3EA00143C22 /* LoginViewController.swift in Sources */,
 				A09C73FC1EE747F900801EFD /* StatsViewController.swift in Sources */,
-				A014DD4B1EDECD8000B806F0 /* ButtonRounded.swift in Sources */,
 				A0190F961EE0398D00B827F7 /* moodCell.swift in Sources */,
 				A0AD34511ED2DBEA00143C22 /* RegisterViewController.swift in Sources */,
 				A02164531ECEFC8A0068BA3B /* ViewController.swift in Sources */,
@@ -439,11 +435,12 @@
 			baseConfigurationReference = F4A304798318AF7E8BFDAA60 /* Pods-Moodo1.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JBD2W62Q7B;
 				INFOPLIST_FILE = Moodo1.0/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohsadat.Moodo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohsadat.moodo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -454,11 +451,12 @@
 			baseConfigurationReference = 72C266D9697191A96CA1E0F9 /* Pods-Moodo1.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JBD2W62Q7B;
 				INFOPLIST_FILE = Moodo1.0/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohsadat.Moodo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohsadat.moodo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

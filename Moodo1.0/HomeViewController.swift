@@ -51,6 +51,9 @@ class HomeViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy"
         let date = dateFormatter.string(from: Date())
+        let dateDate = dateFormatter.date(from: date)
+       // print(dateDate)
+        
         let user = Auth.auth().currentUser
         
         
@@ -84,10 +87,10 @@ class HomeViewController: UIViewController {
                 for child in result {
                     let userKey = child.key
                     self.taskKeys.append(userKey as! String)
-                    print(userKey)
+                   // print(userKey)
                 }
             }
-            print(self.taskKeys)
+           // print(self.taskKeys)
             
             for taskKey in self.taskKeys {
                 let tasksReference = self.ref.child("Todo").child((user?.uid)!).child(taskKey).child("task")
@@ -101,13 +104,19 @@ class HomeViewController: UIViewController {
                         let taskOfday = value?["taskname"] as! String
                         let categoryOfday = value?["category"] as! String
                         let difficultyOfday = value?["difficulty"] as! String
+                        let doneTask = value?["done"] as! String
                         let dateOftask = value?["date"] as! String
+                        let dateOfTask = dateFormatter.date(from: dateOftask)
                         
-                        if dateOftask == date {
+                        
+                        
+                        
+                        if (dateDate?.compare(dateOfTask!) == ComparisonResult.orderedAscending || dateDate?.compare(dateOfTask!) == ComparisonResult.orderedSame) {
+                            if (doneTask == "no") {
+                                
+                                Utilities().displayTasksAccordingToMood(task: taskOfday, difficulty: difficultyOfday, category: categoryOfday, taskTable: &self.taskSources, difficultyTable: &self.difficultySources, categoryTable: &self.categorySources, displayTable: self.tasksTable, mood: self.labelOut.text!, keysTable: &self.taskKeysEdit, key: taskKey)
                             
-                            Utilities().displayTasksAccordingToMood(task: taskOfday, difficulty: difficultyOfday, category: categoryOfday, taskTable: &self.taskSources, difficultyTable: &self.difficultySources, categoryTable: &self.categorySources, displayTable: self.tasksTable, mood: self.labelOut.text!, keysTable: &self.taskKeysEdit, key: taskKey)
-                            
-                            
+                            }
                             
 
                         }
@@ -115,7 +124,7 @@ class HomeViewController: UIViewController {
                         //                        print(categoryOfday)
                         //                        print(difficultyOfday)
                     }
-                    print(self.taskSources)
+                    // print(self.taskSources)
                     
                 })
                 
@@ -199,7 +208,7 @@ class HomeViewController: UIViewController {
 
             let indexPath = tasksTable.indexPathForSelectedRow
             let taskSelected = taskKeysEdit[(indexPath?.row)!]
-            print(taskKeysEdit)
+          //  print(taskKeysEdit)
             editVC.taskEditing = taskSelected
         
         }

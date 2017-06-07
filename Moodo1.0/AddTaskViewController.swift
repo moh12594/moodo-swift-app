@@ -37,7 +37,7 @@ class AddTaskViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     @IBAction func addTaskAction(_ sender: UIButton) {
         
-        if (datePickertextView?.text != nil && pickerTextField.text != nil && diffPickerTextField.text != nil && taskNameTextField.text != nil) {
+        if ( !((datePickertextView?.text)!.isEmpty) && !((pickerTextField.text)!.isEmpty) && !((diffPickerTextField.text)!.isEmpty) && !((taskNameTextField.text)!.isEmpty) ) {
             
 
              ref = Database.database().reference()
@@ -62,7 +62,7 @@ class AddTaskViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             
             
         } else {
-            print ("Nul")
+           Utilities().showAlert(title: "Erreur !", message: "Tous les champs sont obligatoires :( ", vc: self)
         }
         
         
@@ -117,12 +117,12 @@ class AddTaskViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             if value != nil {
                 
                 for (key, valeur) in value! {
-                    print(valeur)
+                    // print(valeur)
                     self.pickerDataSource.append(valeur as! String)
                 }
                 
                 // self.pickerDataSource = value?.allKeys as! [String]
-                print(self.pickerDataSource)
+                // print(self.pickerDataSource)
                 
                 
             }
@@ -136,12 +136,12 @@ class AddTaskViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             if value != nil {
                 
                 for (key, valeur) in value! {
-                    print(valeur)
+                    // print(valeur)
                     self.diffPickerDataSource.append(valeur as! String)
                 }
                 
                 // self.pickerDataSource = value?.allKeys as! [String]
-                print(self.diffPickerDataSource)
+                // print(self.diffPickerDataSource)
                 
                 
             }

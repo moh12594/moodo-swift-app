@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: email!, password: password!, completion: { (user, error) in
             if let error = error {
                 Utilities().showAlert(title: "Erreur !", message: error.localizedDescription, vc: self)
-                print(error.localizedDescription)
+                // print(error.localizedDescription)
                 return
             } else {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "moodTableViewController")
@@ -38,14 +38,14 @@ class LoginViewController: UIViewController {
         
         if(Auth.auth().currentUser != nil) {
             
-            print("already logged")
+            // print("already logged")
             
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "moodTableViewController")
             self.present(vc!, animated: false)
             
         } else if (Auth.auth().currentUser == nil) {
             
-            print("not logged yet")
+            // print("not logged yet")
             
         }
         
